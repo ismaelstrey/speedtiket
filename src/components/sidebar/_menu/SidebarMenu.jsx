@@ -6,9 +6,9 @@ import { HiTicket } from 'react-icons/hi';
 
 
 
-function SidebarMenu() {
+function SidebarMenu({hide}) {
   const Action = (e) => console.log(e)
-  return <div className="flex flex-col w-2/12 bg-slate-900 h-screen justify-center items-baseline ">
+  return <div className={`flex flex-col w-2/12 bg-slate-900 h-screen justify-center items-baseline ${hide && "hidden"}`}>
     <SidebarMenuHeader action={Action}/>
       <SidebarMenuItem to="urgente"  name="Urgente" Icon={HiTicket} color="red" action={Action}/>
       <SidebarMenuItem to="fazendo"  name="Fazendo" Icon={HiTicket} color="green"/>
