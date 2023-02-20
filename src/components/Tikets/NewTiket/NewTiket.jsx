@@ -20,18 +20,18 @@ const NewTiket = () => {
 
 
 
-<div className="flex w-full  p-4 content-center items-center justify-center">
+<div className="flex w-full  p-4 content-center items-center justify-center min-[320px]:items-start min-[320px]:flex-col">
   <label className="px-3 ">Problema Informado:</label>
-  <input  {...register("rasao_social", { required: true })} className="form-input text-black rounded-full  flex-1   border-0 border-solid  select-none outline-none focus:outline-0" />
+  <input  {...register("rasao_social", { required: true })} className="min-[320px]:w-full form-input text-black rounded-full  flex-1   border-0 border-solid  select-none outline-none focus:outline-0" />
   <input  {...register("usuario_logado", { required: true })} disabled className="hidden" />
   {errors.name && <span>Nome</span>}
 </div>
 </div>
 
-<div className="flex w-full sm:flex-col lg:flex-row">
-  <div className="flex  w-full  p-4 content-center items-center justify-start">
-    <label className="px-3 ">Cliente:</label>
-    <select {...register("tipo_empresa", { required: true })}  className="text-black form-select flex-1  border-solid  select-none outline-none focus:outline-0 rounded-full border-0 ">
+<div className="flex w-full min-[320px]:flex-col sm:flex-col lg:flex-row">
+  <div className="flex min-[320px]:flex-col w-full  p-4 content-center items-center justify-start min-[320px]:items-start">
+    <label className="px-3">Cliente:</label>
+    <select {...register("tipo_empresa", { required: true })}  className="flex w-full text-black form-select flex-1  border-solid  select-none outline-none focus:outline-0 rounded-full border-0 ">
       <option value="fisico">Speedsul</option>
       <option defaultValue="juridico" >Oi Telecom</option>
     </select>
