@@ -15,8 +15,8 @@ const Menu = ()  =>  {
   const [abrirEmpresa, setAbrirEmpresa] =useState(false)
   const [abrirTiket, setAbrirTiket] =useState(false)
 
-  const NovoTiket = () => <div className="fixed flex  w-full h-screen items-center justify-center bg-opacity-30 backdrop-blur-sm inset-0"><NewTiket/></div>
-  const NovaEmpresa = () => <div className="fixed flex  w-full h-screen items-center justify-center bg-opacity-30 backdrop-blur-sm inset-0"><NewEmpresa/></div>
+  const NovoTiket = () => <div className="fixed flex  w-full min-[320px]:w-screen h-screen items-center justify-center bg-opacity-30 backdrop-blur-sm inset-0"><NewTiket/></div>
+  const NovaEmpresa = () => <div className="fixed flex  w-full min-[320px]:w-screen  h-screen items-center justify-center bg-opacity-30 backdrop-blur-sm inset-0"><NewEmpresa/></div>
 
 return(
   

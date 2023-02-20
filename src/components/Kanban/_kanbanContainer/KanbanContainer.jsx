@@ -1,3 +1,3 @@
-const KanbanContainer =({children})=><div className='flex md:flex-col sm:flex-col lg:flex-row w-full h-full bg-yellow-100'>{children}</div>
+const KanbanContainer =({children})=><div className='flex min-[320px]:flex-col md:flex-col sm:flex-col lg:flex-row w-full h-full '>{children}</div>
 
 export  {KanbanContainer};
