@@ -1,6 +1,7 @@
+import NewTiket from "./NewTiket/NewTiket";
 
 const Concluidos =() =><div>
-Concluidos
+<NewTiket/>
 </div>
 
 export  {Concluidos};
