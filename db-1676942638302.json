@@ -1,0 +1,108 @@
+{
+  "tiket": [
+    {
+      "id": "56d63070-933c-4f86-9b2a-137044bf7305",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "media",
+      "observacao": "Cliente não passou dados",
+      "status": "aberto",
+      "tecnico": "ismael",
+      "created_at": "2023-02-20T22:14:54-03:00",
+      "updated_at": "2023-02-20T22:14:54-03:00"
+    },
+    {
+      "id": "bd05e39f-0338-402e-b76e-45b802a443f6",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "media",
+      "observacao": "Cliente não passou dados",
+      "status": "aberto",
+      "tecnico": "ismael",
+      "created_at": "2023-02-20T22:15:22-03:00",
+      "updated_at": "2023-02-20T22:15:22-03:00"
+    },
+    {
+      "id": "989afe9f-9430-459b-a15a-e3fae0b4d84e",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "alto",
+      "observacao": "Cliente não passou dados",
+      "status": "aberto",
+      "tecnico": "Elias",
+      "created_at": "2023-02-20T22:16:27-03:00",
+      "updated_at": "2023-02-20T22:16:27-03:00"
+    },
+    {
+      "id": "73b0c8a5-c86e-4aac-ad8f-ac101029c002",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "critico",
+      "observacao": "Cliente não passou dados",
+      "status": "aberto",
+      "tecnico": "Elias",
+      "created_at": "2023-02-20T22:17:22-03:00",
+      "updated_at": "2023-02-20T22:17:22-03:00"
+    },
+    {
+      "id": "4a502aa9-aeed-488a-9457-2f5f60c5d2b7",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "baixo",
+      "observacao": "Cliente não passou dados",
+      "status": "aberto",
+      "tecnico": "Elias",
+      "created_at": "2023-02-20T22:17:43-03:00",
+      "updated_at": "2023-02-20T22:17:43-03:00"
+    },
+    {
+      "id": "ecb9f919-e56e-48aa-af02-843b5ce22588",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "agendado",
+      "observacao": "Cliente não passou dados",
+      "status": "aberto",
+      "tecnico": "Antonio",
+      "created_at": "2023-02-20T22:17:59-03:00",
+      "updated_at": "2023-02-20T22:17:59-03:00"
+    },
+    {
+      "id": "236ca4f6-ba3d-4998-856e-e733f8fba18f",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "agendado",
+      "observacao": "Cliente não passou dados",
+      "status": "fazendo",
+      "tecnico": "Antonio",
+      "created_at": "2023-02-20T22:18:20-03:00",
+      "updated_at": "2023-02-20T22:18:20-03:00"
+    },
+    {
+      "id": "ee48980f-0f33-496f-8b29-e7d23937efd2",
+      "problema_informado": "Não acessa a internet",
+      "cliente": "Speed SUL",
+      "categoria": "redes",
+      "subcategoria": "sem acesso",
+      "prioridade": "agendado",
+      "observacao": "Cliente não passou dados",
+      "status": "finalizado",
+      "tecnico": "Antonio",
+      "created_at": "2023-02-20T22:18:29-03:00",
+      "updated_at": "2023-02-20T22:18:29-03:00"
+    }
+  ]
+}

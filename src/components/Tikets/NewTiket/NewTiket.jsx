@@ -72,7 +72,7 @@ const NewTiket = () => {
 
 <div className="flex flex-col p-4">
 <label className="px-3">Observação:</label>
-<textarea  {...register("observacao", { required: false })} className="form-textarea text-black rounded-full select-none outline-none focus:outline-0 h-full " />
+<textarea  {...register("observacao", { required: false })} maxLength="400" rows={5} className="form-textarea text-black rounded select-none outline-none focus:outline-0 h-full " />
 {errors.name && <span>Nome</span>}
 </div>
 
