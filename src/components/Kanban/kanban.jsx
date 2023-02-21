@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { dataApiTiket } from "../../api/Api";
+import { tiket as dataApiTiket } from "../../api/Api";
 import { KanbanColumn } from "./_kanbanColumn/KanbanColumn";
 import { KanbanContainer } from "./_kanbanContainer";
 import { KanbanContainerCard } from "./_kanbanContainerCard";
