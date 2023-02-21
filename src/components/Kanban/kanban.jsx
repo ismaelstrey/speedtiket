@@ -8,10 +8,10 @@ import { KanbanContainerCard } from './_kanbanContainerCard';
 const Kanban = () =>
 
     <KanbanContainer>
-        <KanbanColumn titleColor="bg-red-500" textColor="text-white" title="A FAZER"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
-        <KanbanColumn titleColor="bg-green-500" textColor="text-white" title="ATENDENDO"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
-        <KanbanColumn titleColor="bg-yellow-500" textColor="text-white" title="PAUSADOS"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
-        <KanbanColumn titleColor="bg-blue-500" textColor="text-white" title="RETORNADOS"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
-        <KanbanColumn titleColor="bg-orange-500" textColor="text-white" title="EXPIRADOS"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
+        <KanbanColumn titleColor="bg-red-500" bordeColor="border-red-500" textColor="text-white" title="A FAZER"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
+        <KanbanColumn titleColor="bg-green-500" bordeColor="border-green-500"  textColor="text-white" title="ATENDENDO"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
+        <KanbanColumn titleColor="bg-yellow-500" bordeColor="border-yellow-500"  textColor="text-white" title="PAUSADOS"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
+        <KanbanColumn titleColor="bg-blue-500" bordeColor="border-blue-500"  textColor="text-white" title="RETORNADOS"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
+        <KanbanColumn titleColor="bg-orange-500" bordeColor="border-orange-500"  textColor="text-white" title="EXPIRADOS"><KanbanContainerCard/><KanbanContainerCard/><KanbanContainerCard/></KanbanColumn>
     </KanbanContainer>
 export { Kanban };
