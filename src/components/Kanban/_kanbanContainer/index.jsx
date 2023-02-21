@@ -1,2 +1,1 @@
-export {KanbanContainer} from "./KanbanContainer";
-
+export { KanbanContainer } from "./KanbanContainer";

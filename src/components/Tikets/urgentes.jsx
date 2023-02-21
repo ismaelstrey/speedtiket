@@ -1,6 +1,3 @@
+const Urgentes = () => <div>Urgentes</div>;
 
-const Urgentes =() =><div>
-Urgentes
-</div>
-
-export  {Urgentes};
+export { Urgentes };

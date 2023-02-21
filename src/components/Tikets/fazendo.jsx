@@ -1,6 +1,3 @@
+const Fazendo = () => <div>Fazendo</div>;
 
-const Fazendo =() =><div>
-Fazendo
-</div>
-
-export  {Fazendo};
+export { Fazendo };

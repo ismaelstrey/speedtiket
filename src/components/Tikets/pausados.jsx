@@ -1,6 +1,3 @@
+const Pausados = () => <div>Pausados</div>;
 
-const Pausados =() =><div>
-Pausados
-</div>
-
-export  {Pausados};
+export { Pausados };
