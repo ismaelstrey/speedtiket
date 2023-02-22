@@ -1,7 +1,17 @@
 import { useForm } from "react-hook-form";
+import { postTiketApi } from "../../../api/Api";
+import { v4} from "uuid";
+import { useState } from "react";
+import moment from "moment/moment";
+
 
 const NewTiket = () => {
   //declarar os métodos que serão utilizados para manipular o form
+console.log()
+  const [user, setUser]=useState("ismael Strey")
+  const [id, setId]=useState(v4())
+  const [data, setData]=useState(moment().format('L'))
+ 
 
   const {
     register,
@@ -9,9 +19,14 @@ const NewTiket = () => {
     watch,
     formState: { errors },
     reset,
-  } = useForm();
+  } = useForm({defaultValues:{id,created_at:data,updated_at:data,user:"ismaelstrey"}});
   //declarar para qual função o método handleSubmit irá enviar as informações
-  const addTcket = (data) => console.log(data);
+  const addTcket = (data) => {
+    console.log("post", data);
+    return postTiketApi(data)
+      .then((dat) => console.log(dat))
+      .catch((err) => console.log(err));
+  };
   return (
     //no onSubmit do form o método handleSubmit irá manipular as informações para o loginUser
 
@@ -21,23 +36,18 @@ const NewTiket = () => {
       onSubmit={handleSubmit(addTcket)}
       className="m-20 container text-lg text-white  flex w-full justify-center content-center items-center bg-slate-800 rounded-2xl  border-2 border-black"
     >
-      <div className="flex flex-col w-full   ">
+      <div className="flex flex-col w-full">
         <span className="flex w-full items-center justify-center content-center mb-10 bg-blue-700 rounded-t-2xl h-10 border-b-2 border-white">
-          {" "}
-          <h2 className="uppercase">novo ticket</h2>
-        </span>
+          <h2 className="uppercase">novo ticket {moment().format('LTS')}</h2>
+               </span>
         <div className="flex sm:flex-col lg:flex-row w-full">
           <div className="flex w-full  p-4 content-center items-center justify-center min-[320px]:items-start min-[320px]:flex-col">
             <label className="px-3 ">Problema Informado:</label>
             <input
-              {...register("rasao_social", { required: true })}
+              {...register("problema_informado", { required: true })}
               className="min-[320px]:w-full form-input text-black rounded-full  flex-1   border-0 border-solid  select-none outline-none focus:outline-0"
             />
-            <input
-              {...register("usuario_logado", { required: true })}
-              disabled
-              className="hidden"
-            />
+
             {errors.name && <span>Nome</span>}
           </div>
         </div>
@@ -46,9 +56,8 @@ const NewTiket = () => {
           <div className="flex min-[320px]:flex-col w-full  p-4 content-center items-center justify-start min-[320px]:items-start">
             <label className="px-3">Cliente:</label>
             <select
-              {...register("tipo_empresa", { required: true })}
-              className="flex w-full text-black form-select flex-1  border-solid  select-none outline-none focus:outline-0 rounded-full border-0 "
-            >
+              {...register("cliente", { required: true })}
+              className="flex w-full text-black form-select flex-1  border-solid  select-none outline-none focus:outline-0 rounded-full border-0 ">
               <option value="fisico">Speedsul</option>
               <option defaultValue="juridico">Oi Telecom</option>
             </select>
@@ -56,7 +65,7 @@ const NewTiket = () => {
           <div className="flex w-full  p-4 content-center items-center justify-start">
             <label className="px-3 ">Categorias:</label>
             <select
-              {...register("matriz", { required: true })}
+              {...register("categoria", { required: true })}
               className="form-select text-black rounded-full flex-1  border-0 select-none outline-none focus:outline-0 "
             >
               <option defaultValue="redes">Redes</option>
@@ -68,7 +77,7 @@ const NewTiket = () => {
           <div className="flex w-full  p-4 content-center items-center justify-start">
             <label className="px-3 ">Subcategoria:</label>
             <select
-              {...register("prioridade", { required: true })}
+              {...register("subcategoria", { required: true })}
               className="form-select text-black text-lg rounded-full flex-1  border-0 select-none outline-none focus:outline-0 "
             >
               <option value="critico">Configuração</option>

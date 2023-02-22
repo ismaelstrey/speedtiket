@@ -4,14 +4,15 @@ const options = {
   headers: {
     "X-Master-Key":
       "$2b$10$/26q/3HIgBcqKaOku5XDZuiF4O7z25h3bJNIcZCKC3F6Z0TJRj3/W",
+    "Content-Type": "application/json",
   },
 };
 
 const getTiketApi = async () => await axios.get(url, options);
+const postTiketApi = async (data) =>
+  await axios.post("http://localhost:3000/tiket", data, options);
 
-        const { data } = await getTiketApi();
-        const { cliente, tiket } = await  data.record;
+const { data } = await getTiketApi();
+const { cliente, tiket } = await data.record;
 
-
-
-export  { cliente, tiket };
+export { cliente, tiket, postTiketApi };
