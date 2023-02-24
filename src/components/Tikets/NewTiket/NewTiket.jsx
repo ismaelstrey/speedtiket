@@ -8,7 +8,7 @@ import moment from "moment/moment";
 const NewTiket = () => {
   //declarar os métodos que serão utilizados para manipular o form
 console.log()
-  const [user, setUser]=useState("ismael Strey")
+ 
   const [id, setId]=useState(v4())
   const [data, setData]=useState(moment().format('L'))
  
@@ -19,7 +19,7 @@ console.log()
     watch,
     formState: { errors },
     reset,
-  } = useForm({defaultValues:{id,created_at:data,updated_at:data,user:"ismaelstrey"}});
+  } = useForm({defaultValues:{id,created_at:data,updated_at:data,user:"ismaelstrey",status: "fazer",tecnico: "Antonio"}});
   //declarar para qual função o método handleSubmit irá enviar as informações
   const addTcket = (data) => {
     console.log("post", data);

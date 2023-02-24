@@ -20,6 +20,7 @@ const RenderKanbanCard = (array) => {
       text={data.problema_informado}
       data={data.updated_at}
       user={data.tecnico}
+      status={data.status}
     />
   ));
 };
@@ -33,12 +34,13 @@ const Kanban = () => {
   const [tiketRetornados, setTiketRetornado] = useState([]);
   const [tiketExpirados, setTiketExpirados] = useState([]);
   useEffect(() => {
+    console.log(tiket)
     setTiketAtendendo(filtra(tiket[0], "atendendo"));
     setTiketAFazer(filtra(tiket[0], "fazer"));
     setTiketPausados(filtra(tiket[0], "pausados"));
     setTiketRetornado(filtra(tiket[0], "retornados"));
     setTiketExpirados(filtra(tiket[0], "expirados"));
-  }, [tiket]);
+  }, []);
 
   return (
     <KanbanContainer>

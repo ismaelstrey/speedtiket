@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = `https://api.jsonbin.io/v3/b/63f4cf86c0e7653a057bc4a5`;
+// const url = `https://api.jsonbin.io/v3/b/63f4cf86c0e7653a057bc4a5`;
 const options = {
   headers: {
     "X-Master-Key":
@@ -8,11 +8,13 @@ const options = {
   },
 };
 
-const getTiketApi = async () => await axios.get(url, options);
+// const getTiketApi = async () => await axios.get(url, options);
+const getTiketApi = async () => await axios.get('http://localhost:3000/tiket');
+// const getClienteApi = async () => await axios.get('http://localhost:3000/cliente');
 const postTiketApi = async (data) =>
   await axios.post("http://localhost:3000/tiket", data, options);
 
 const { data } = await getTiketApi();
-const { cliente, tiket } = await data.record;
-
-export { cliente, tiket, postTiketApi };
+const  tiket  = await data;
+console.log(data)
+export { tiket, postTiketApi };

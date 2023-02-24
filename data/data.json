@@ -47,6 +47,18 @@
       "observacao": "Espresa de ielecomunicação",
       "created_at": "2023-02-20T22:26:01-03:00",
       "updated_at": "2023-02-20T22:26:01-03:00"
+    },
+    {
+      "id": "102ae713-a26e-4c58-9164-4e5ab3568ce4",
+      "tipo": "Cliente não passou dados",
+      "razao_social": "antonio redes telecom",
+      "nome_fantasia": "Vivo Telecom",
+      "cnpj": "59988.55588.5554/0001",
+      "ie": "00-25-98-8898",
+      "status": "ativo",
+      "observacao": "Espresa de ielecomunicação",
+      "created_at": "2023-02-23T22:36:01-03:00",
+      "updated_at": "2023-02-23T22:36:01-03:00"
     }
   ],
   "tiket": [
@@ -389,302 +401,18 @@
       "updated_at": "2023-02-20T23:46:51-03:00"
     },
     {
-      "id": "ef1d9323-779c-46b3-a5d4-212b240e5d5a",
-      "problema_informado": "Não acessa a internet",
-      "cliente": "Speed SUL",
-      "categoria": "redes",
-      "subcategoria": "sem acesso",
-      "prioridade": "agendado",
-      "observacao": "Cliente não passou dados",
-      "status": "retornados",
-      "tecnico": "Antonio",
-      "created_at": "2023-02-20T23:46:52-03:00",
-      "updated_at": "2023-02-20T23:46:52-03:00"
-    },
-    {
-      "id": "8b3dfb3f-85d6-4527-95a9-afc88200aa64",
-      "problema_informado": "Não acessa a internet",
-      "cliente": "Speed SUL",
-      "categoria": "redes",
-      "subcategoria": "sem acesso",
-      "prioridade": "agendado",
-      "observacao": "Cliente não passou dados",
-      "status": "retornados",
-      "tecnico": "Antonio",
-      "created_at": "2023-02-20T23:46:52-03:00",
-      "updated_at": "2023-02-20T23:46:52-03:00"
-    },
-    {
-      "id": "6c51ce6d-f4cf-4b66-8426-75ce74efdc4c",
-      "problema_informado": "Não acessa a internet",
-      "cliente": "Speed SUL",
-      "categoria": "redes",
-      "subcategoria": "sem acesso",
-      "prioridade": "agendado",
-      "observacao": "Cliente não passou dados",
-      "status": "expirados",
-      "tecnico": "Antonio",
-      "created_at": "2023-02-20T23:46:59-03:00",
-      "updated_at": "2023-02-20T23:46:59-03:00"
-    },
-    {
-      "id": "d4b83dff-d10a-494d-8f85-849d258a0a41",
-      "problema_informado": "Não acessa a internet",
-      "cliente": "Speed SUL",
-      "categoria": "redes",
-      "subcategoria": "sem acesso",
-      "prioridade": "agendado",
-      "observacao": "Cliente não passou dados",
-      "status": "expirados",
-      "tecnico": "Antonio",
-      "created_at": "2023-02-20T23:47:00-03:00",
-      "updated_at": "2023-02-20T23:47:00-03:00"
-    },
-    {
-      "id": "41001c21-28cc-4cef-a471-697f12bed87b",
-      "problema_informado": "Não acessa a internet",
-      "cliente": "Speed SUL",
-      "categoria": "redes",
-      "subcategoria": "sem acesso",
-      "prioridade": "agendado",
-      "observacao": "Cliente não passou dados",
-      "status": "expirados",
-      "tecnico": "Antonio",
-      "created_at": "2023-02-20T23:47:01-03:00",
-      "updated_at": "2023-02-20T23:47:01-03:00"
-    },
-    {
-      "id": "6e17eaa6-0a43-49a6-b8c9-999ad1e091e9",
-      "problema_informado": "Não acessa a internet",
-      "cliente": "Speed SUL",
-      "categoria": "redes",
-      "subcategoria": "sem acesso",
-      "prioridade": "agendado",
-      "observacao": "Cliente não passou dados",
-      "status": "expirados",
-      "tecnico": "Antonio",
-      "created_at": "2023-02-20T23:47:01-03:00",
-      "updated_at": "2023-02-20T23:47:01-03:00"
-    },
-    {
-      "rasao_social": "fffd",
-      "tipo_empresa": "Oi Telecom",
-      "matriz": "projeto",
-      "prioridade": "alto",
-      "observacao": "rrrrr",
-      "id": "xzP1IXm"
-    },
-    {
-      "rasao_social": "fffd",
-      "tipo_empresa": "Oi Telecom",
-      "matriz": "projeto",
-      "prioridade": "Medio",
-      "observacao": "redes tocaiinfkjeoi",
-      "problema_informado": "rede caindo",
-      "cliente": "Oi Telecom",
-      "categoria": "implantacao",
-      "subcategoria": "Incidadente",
-      "id": "J2j9L92"
-    },
-    {
-      "rasao_social": "fffd",
-      "tipo_empresa": "Oi Telecom",
-      "matriz": "projeto",
-      "prioridade": "Medio",
-      "observacao": "redes tocaiinfkjeoi",
-      "problema_informado": "rede caindo",
-      "cliente": "Oi Telecom",
-      "categoria": "implantacao",
-      "subcategoria": "Incidadente",
-      "id": "sw8AI4z"
-    },
-    {
-      "problema_informado": "teste",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "ddd",
-      "id": "jyeTFRj"
-    },
-    {
-      "problema_informado": "caindo",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "teste",
-      "id": "ETMcS8T"
-    },
-    {
-      "problema_informado": "caindo",
-      "cliente": "Oi Telecom",
-      "categoria": "implantacao",
-      "subcategoria": "Incidadente",
-      "prioridade": "critico",
-      "observacao": "Cra oi caindo",
-      "id": "i9lge2_"
-    },
-    {
-      "problema_informado": "caindo",
-      "cliente": "Oi Telecom",
-      "categoria": "implantacao",
-      "subcategoria": "Incidadente",
-      "prioridade": "critico",
-      "observacao": "Cra oi caindo",
-      "id": "-FcE0XY"
-    },
-    {
-      "problema_informado": "caindo",
-      "cliente": "Oi Telecom",
-      "categoria": "implantacao",
-      "subcategoria": "Incidadente",
-      "prioridade": "critico",
-      "observacao": "Cra oi caindo",
-      "id": "-ZPqOkB"
-    },
-    {
-      "problema_informado": "caindo",
-      "cliente": "Oi Telecom",
-      "categoria": "implantacao",
-      "subcategoria": "Incidadente",
-      "prioridade": "critico",
-      "observacao": "Cra oi caindo",
-      "id": "bimpz6f"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "eerr",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "fffe",
-      "id": "kEl4j04"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "yyy55",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "rrrr",
-      "id": "rcyKwgH"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "ddrrt",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "ttttt",
-      "id": "1mHEylr"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "ddrrtttt",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "ttttt",
-      "id": "eTw66-o"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "ddrrtttt",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "ttttt",
-      "id": "OYe9Ec6"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "ddrrtttt",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "ttttt",
-      "id": "A-QAxdD"
-    },
-    {
-      "created_at": "2023-02-08",
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "herr",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "",
-      "id": "mp_u2IG"
-    },
-    {
-      "created_at": "",
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "eeerrr",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "fffee",
-      "id": "0NJLqwD"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "eeefff",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "rrttttt",
-      "id": "d95vP9f"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "rrrrr",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "rrrrrrrrrrrrrrrrrrr",
-      "id": "Ritbv6w"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "teste",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "dddssd",
-      "id": "PZ9Kuzx"
-    },
-    {
-      "usuario_logado": "ismael Strey",
-      "problema_informado": "www",
-      "cliente": "fisico",
-      "categoria": "Redes",
-      "subcategoria": "critico",
-      "prioridade": "critico",
-      "observacao": "rrrw",
-      "id": "ba8NIBH"
-    },
-    {
-      "id": "c4739eab-dd8d-4bd0-b3f0-fa4c953b4cdc",
-      "created_at": "02/21/2023",
-      "updated_at": "02/21/2023",
+      "id": "fdc97289-43ec-4476-8fc1-3f55900719e2",
+      "created_at": "02/23/2023",
+      "updated_at": "02/23/2023",
       "user": "ismaelstrey",
-      "problema_informado": "dddd",
+      "status": "fazer",
+      "tecnico": "Antonio",
+      "problema_informado": "ttttt",
       "cliente": "fisico",
       "categoria": "Redes",
       "subcategoria": "critico",
       "prioridade": "critico",
-      "observacao": "dddd"
+      "observacao": "rrtttt"
     }
   ]
 }
