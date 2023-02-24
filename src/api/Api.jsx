@@ -9,12 +9,12 @@ const options = {
 };
 
 // const getTiketApi = async () => await axios.get(url, options);
-const getTiketApi = async () => await axios.get('http://localhost:3000/tiket');
+const getTiketApi = async () => await axios.get('https://tiket-back.vercel.app/tiket');
 // const getClienteApi = async () => await axios.get('http://localhost:3000/cliente');
 const postTiketApi = async (data) =>
-  await axios.post("http://localhost:3000/tiket", data, options);
+  await axios.post("https://tiket-back.vercel.app/tiket", data, options);
 
 const { data } = await getTiketApi();
-const  tiket  = await data;
+const tiket = await data;
 console.log(data)
 export { tiket, postTiketApi };
