@@ -40,13 +40,13 @@ const Menu = () => {
       {menu && (
         <div className=" bg-black fixed p-10 rounded-full  bottom-4 right-4 z-10 border-2 border-white ">
           <span
-            className="bg-green-600 p-2 rounded-full fixed bottom-10 right-20 hover:border-2 hover: border-white cursor-pointer"
+            className={`bg-green-600 p-2 rounded-full fixed bottom-10 right-20 hover:border-8 hover:border-white cursor-pointer ${mostrarFormEmpresa && "border-8 border-black"}`}
             onClick={() => mostrarFormularioEmpresa()}
           >
             <IoIosAddCircle />
           </span>
           <span
-            className="bg-blue-400 p-2 rounded-full fixed bottom-20 right-10 hover:border-2 hover: border-white cursor-pointer aria-[title]:text-xs"
+            className={`bg-blue-400 p-2 rounded-full fixed bottom-20 right-10 hover:border-8 hover:border-white cursor-pointer aria-[title]:text-xs ${mostrarFormTiket && "border-8 border-black"}`}
             title="Novo ticket"
             onClick={() => mostrarFormularioTiket()}
           >

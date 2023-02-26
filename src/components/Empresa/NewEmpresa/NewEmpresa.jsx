@@ -13,21 +13,17 @@ const NewEmpresa = () => {
     formState: { errors },
     reset,
   } = useForm();
-  //declarar para qual função o método handleSubmit irá enviar as informações
   const loginUser = (data) => console.log(data);
   return (
-    //no onSubmit do form o método handleSubmit irá manipular as informações para o loginUser
-
-    //o register recebe o nome do input, e os errors apresentam na tela os erros de validação
-
+   
     <form
       onSubmit={handleSubmit(loginUser)}
       className="m-20 container text-lg text-white  flex w-full justify-center content-center items-center bg-slate-800 rounded-2xl  border-2 border-black"
     >
       <div className="flex flex-col w-full   ">
-        <span className="flex w-full items-center justify-center content-center mb-10 bg-black rounded-t-2xl h-10 border-b-2 border-white">
+        <span className="flex w-full items-center justify-center content-center mb-10 bg-green-400 rounded-t-2xl h-10 border-b-2 border-white">
           {" "}
-          <h2>Cadastro de empresa</h2>
+          <strong>CADASTRO DE EMPRESA</strong>
         </span>
         <div className="flex sm:flex-col lg:flex-row w-full">
           <div className="flex  w-full  p-4 content-center items-center justify-start">
