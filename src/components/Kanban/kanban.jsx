@@ -49,6 +49,7 @@ const Kanban = () => {
         bordeColor="border-red-500"
         textColor="text-white"
         title="A FAZER"
+        total={tiketAFazer.length}
       >
         <RenderKanbanCard array={tiketAFazer} />
       </KanbanColumn>
@@ -57,6 +58,7 @@ const Kanban = () => {
         bordeColor="border-green-500"
         textColor="text-white"
         title="ATENDENDO"
+        total={tiketAtendendo.length}
       >
         <RenderKanbanCard array={tiketAtendendo} />
       </KanbanColumn>
@@ -65,6 +67,7 @@ const Kanban = () => {
         bordeColor="border-yellow-500"
         textColor="text-white"
         title="PAUSADOS"
+        total={tiketPausados.length}
       >
         <RenderKanbanCard array={tiketPausados} />
       </KanbanColumn>
@@ -73,6 +76,7 @@ const Kanban = () => {
         bordeColor="border-blue-500"
         textColor="text-white"
         title="RETORNADOS"
+        total={tiketRetornados.length}
       >
         <RenderKanbanCard array={tiketRetornados} />
       </KanbanColumn>
@@ -81,8 +85,10 @@ const Kanban = () => {
         bordeColor="border-orange-500"
         textColor="text-white"
         title="EXPIRADOS"
+        total={tiketExpirados.length}
       >
         <RenderKanbanCard array={tiketExpirados} />
+        
       </KanbanColumn>
     </KanbanContainer>
   );

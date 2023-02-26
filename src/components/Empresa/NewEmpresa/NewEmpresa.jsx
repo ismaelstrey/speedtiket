@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { FormContext } from "../../../usecontext/FormContext";
+
 
 const NewEmpresa = () => {
   //declarar os métodos que serão utilizados para manipular o form
-
+  const { mostrarFormularioEmpresa}= useContext(FormContext)
   const {
     register,
     handleSubmit,
@@ -103,8 +106,8 @@ const NewEmpresa = () => {
             />
             <input
               type="button"
-              onClick={() => reset()}
-              value="Limpar"
+              onClick={() => mostrarFormularioEmpresa()}
+              value="Cancelar"
               className="border-2 border-black pt-2 bg-red-500 text-white p-2 rounded"
             />
           </span>

@@ -1,17 +1,19 @@
 import { useForm } from "react-hook-form";
 import { postTiketApi } from "../../../api/Api";
 import { v4} from "uuid";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import moment from "moment/moment";
+import { FormContext } from "../../../usecontext/FormContext";
 
 
-const NewTiket = () => {
-  //declarar os métodos que serão utilizados para manipular o form
-console.log()
+
+    const NewTiket = () => {
+   
  
+  const {mostrarFormularioTiket}=useContext(FormContext)
   const [id, setId]=useState(v4())
   const [data, setData]=useState(moment().format('L'))
- 
+
 
   const {
     register,
@@ -28,13 +30,10 @@ console.log()
       .catch((err) => console.log(err));
   };
   return (
-    //no onSubmit do form o método handleSubmit irá manipular as informações para o loginUser
-
-    //o register recebe o nome do input, e os errors apresentam na tela os erros de validação
-
+  
     <form
       onSubmit={handleSubmit(addTcket)}
-      className="m-20 container text-lg text-white  flex w-full justify-center content-center items-center bg-slate-800 rounded-2xl  border-2 border-black"
+      className={`m-20 container text-lg text-white  flex w-full justify-center content-center items-center bg-slate-800 rounded-2xl  border-2 border-black `}
     >
       <div className="flex flex-col w-full">
         <span className="flex w-full items-center justify-center content-center mb-10 bg-blue-700 rounded-t-2xl h-10 border-b-2 border-white">
@@ -111,7 +110,6 @@ console.log()
             </select>
           </div>
         </div>
-
         <div className="flex flex-col p-4">
           <label className="px-3">Observação:</label>
           <textarea
@@ -127,13 +125,13 @@ console.log()
           <span className="m-4">
             <input
               type="submit"
-              className="border-2 border-black bg-blue-500 text-white p-2 mr-2 rounded"
+              className="border-2 border-black bg-green-500 text-white p-2 mr-2 rounded cursor-pointer"
             />
             <input
               type="button"
-              onClick={() => reset()}
-              value="Limpar"
-              className="border-2 border-black pt-2 bg-red-500 text-white p-2 rounded"
+              onClick={() =>mostrarFormularioTiket()}
+              value="Cancelar"
+              className="border-2 border-black pt-2 bg-red-500 text-white p-2 rounded cursor-pointer"
             />
           </span>
         </div>

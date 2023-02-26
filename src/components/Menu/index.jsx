@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { CgMenuRound } from "react-icons/cg";
 import { IoIosAddCircle } from "react-icons/io";
 import { GrTicket } from "react-icons/gr";
@@ -6,8 +6,10 @@ import { AiFillDelete } from "react-icons/ai";
 import { FaThList } from "react-icons/fa";
 import NewTiket from "../Tikets/NewTiket/NewTiket";
 import NewEmpresa from "../Empresa/NewEmpresa/NewEmpresa";
+import { FormContext } from "../../usecontext/FormContext";
 
 const Menu = () => {
+  const {mostrarFormTiket, mostrarFormularioTiket,mostrarFormEmpresa, mostrarFormularioEmpresa}= useContext(FormContext)
   const [menu, setMenu] = useState(true);
   const [abrirEmpresa, setAbrirEmpresa] = useState(false);
   const [abrirTiket, setAbrirTiket] = useState(false);
@@ -25,8 +27,8 @@ const Menu = () => {
 
   return (
     <div>
-      {abrirTiket && <NovoTiket />}
-      {abrirEmpresa && <NovaEmpresa />}
+      {mostrarFormTiket && <NovoTiket />}
+      {mostrarFormEmpresa && <NovaEmpresa />}
       <div
         className={`fixed rounded-full bg-green-400 p-2 hover:bg-white cursor-pointer z-20 ${
           menu ? "bottom-10 right-10 " : "bottom-0 right-0 "
@@ -39,14 +41,14 @@ const Menu = () => {
         <div className=" bg-black fixed p-10 rounded-full  bottom-4 right-4 z-10 border-2 border-white ">
           <span
             className="bg-green-600 p-2 rounded-full fixed bottom-10 right-20 hover:border-2 hover: border-white cursor-pointer"
-            onClick={() => setAbrirEmpresa(!abrirEmpresa)}
+            onClick={() => mostrarFormularioEmpresa()}
           >
             <IoIosAddCircle />
           </span>
           <span
             className="bg-blue-400 p-2 rounded-full fixed bottom-20 right-10 hover:border-2 hover: border-white cursor-pointer aria-[title]:text-xs"
             title="Novo ticket"
-            onClick={() => setAbrirTiket(!abrirTiket)}
+            onClick={() => mostrarFormularioTiket()}
           >
             <GrTicket />
           </span>
