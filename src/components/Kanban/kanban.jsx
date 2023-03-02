@@ -34,7 +34,7 @@ const Kanban = () => {
   const [tiketRetornados, setTiketRetornado] = useState([]);
   const [tiketExpirados, setTiketExpirados] = useState([]);
   useEffect(() => {
-    console.log(tiket)
+    // console.log(tiket)
     setTiketAtendendo(filtra(tiket[0], "atendendo"));
     setTiketAFazer(filtra(tiket[0], "fazer"));
     setTiketPausados(filtra(tiket[0], "pausados"));
@@ -88,7 +88,7 @@ const Kanban = () => {
         total={tiketExpirados.length}
       >
         <RenderKanbanCard array={tiketExpirados} />
-        
+
       </KanbanColumn>
     </KanbanContainer>
   );

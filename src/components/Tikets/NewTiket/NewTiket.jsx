@@ -1,18 +1,18 @@
 import { useForm } from "react-hook-form";
 import { postTiketApi } from "../../../api/Api";
-import { v4} from "uuid";
+import { v4 } from "uuid";
 import { useContext, useState } from "react";
 import moment from "moment/moment";
 import { FormContext } from "../../../usecontext/FormContext";
 
 
 
-    const NewTiket = () => {
-   
- 
-  const {mostrarFormularioTiket}=useContext(FormContext)
-  const [id, setId]=useState(v4())
-  const [data, setData]=useState(moment().format('L'))
+const NewTiket = () => {
+
+
+  const { mostrarFormularioTiket } = useContext(FormContext)
+  const [id, setId] = useState(v4())
+  const [data, setData] = useState(moment().format('L'))
 
 
   const {
@@ -21,16 +21,11 @@ import { FormContext } from "../../../usecontext/FormContext";
     watch,
     formState: { errors },
     reset,
-  } = useForm({defaultValues:{id,created_at:data,updated_at:data,user:"ismaelstrey",status: "fazer",tecnico: "Antonio"}});
+  } = useForm();
   //declarar para qual função o método handleSubmit irá enviar as informações
-  const addTcket = (data) => {
-    console.log("post", data);
-    return postTiketApi(data)
-      .then((dat) => console.log(dat))
-      .catch((err) => console.log(err));
-  };
+  const addTcket = async (data) => await postTiketApi(data)
   return (
-  
+
     <form
       onSubmit={handleSubmit(addTcket)}
       className={`m-20 container text-lg text-white  flex w-full justify-center content-center items-center bg-slate-800 rounded-2xl  border-2 border-black `}
@@ -38,7 +33,7 @@ import { FormContext } from "../../../usecontext/FormContext";
       <div className="flex flex-col w-full">
         <span className="flex w-full items-center justify-center content-center mb-10 bg-blue-700 rounded-t-2xl h-10 border-b-2 border-white">
           <h2 className="uppercase">novo ticket {moment().format('LTS')}</h2>
-               </span>
+        </span>
         <div className="flex sm:flex-col lg:flex-row w-full">
           <div className="flex w-full  p-4 content-center items-center justify-center min-[320px]:items-start min-[320px]:flex-col">
             <label className="px-3 ">Problema Informado:</label>
@@ -50,8 +45,8 @@ import { FormContext } from "../../../usecontext/FormContext";
             {errors.name && <span>Nome</span>}
           </div>
         </div>
-
-        <div className="flex w-full min-[320px]:flex-col sm:flex-col lg:flex-row">
+        {/* inicio */}
+        {/* <div className="flex w-full min-[320px]:flex-col sm:flex-col lg:flex-row">
           <div className="flex min-[320px]:flex-col w-full  p-4 content-center items-center justify-start min-[320px]:items-start">
             <label className="px-3">Cliente:</label>
             <select
@@ -109,7 +104,8 @@ import { FormContext } from "../../../usecontext/FormContext";
               </option>
             </select>
           </div>
-        </div>
+        </div> */}
+        {/* end  */}
         <div className="flex flex-col p-4">
           <label className="px-3">Observação:</label>
           <textarea
@@ -129,7 +125,7 @@ import { FormContext } from "../../../usecontext/FormContext";
             />
             <input
               type="button"
-              onClick={() =>mostrarFormularioTiket()}
+              onClick={() => mostrarFormularioTiket()}
               value="Cancelar"
               className="border-2 border-black pt-2 bg-red-500 text-white p-2 rounded cursor-pointer"
             />
