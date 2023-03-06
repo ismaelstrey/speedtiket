@@ -9,13 +9,17 @@ const options = {
 // const getTiketApi = async () => await axios.get(url, options);
 const getTiketApi = async () => await axios.get('https://tiket-back.vercel.app/tiket');
 // const getClienteApi = async () => await axios.get('http://localhost:3000/cliente');
-const postTiketApi = async (data) => {
-  const { observacao, problema_informado } = data
-
-  const dataPost = { "observacao": observacao, "problema_informado": problema_informado }
-  console.log(dataPost)
-  const post = async () => await axios.post("https://numerous-sugared-enthusiasm.glitch.me/tiket", dataPost, options);
-  return await post
+const postTiketApi = async (array) => {
+  console.log(array)
+  const { data } = await axios.post('https://numerous-sugared-enthusiasm.glitch.me/tiket', {
+    array
+  }, {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }
+  )
+  return data
 }
 
 const { data } = await getTiketApi();
