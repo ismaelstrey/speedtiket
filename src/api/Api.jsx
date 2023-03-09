@@ -10,10 +10,10 @@ const options = {
 const getTiketApi = async () => await axios.get('https://tiket-back.vercel.app/tiket');
 // const getClienteApi = async () => await axios.get('http://localhost:3000/cliente');
 const postTiketApi = async (array) => {
-  console.log(array)
-  const { data } = await axios.post('https://numerous-sugared-enthusiasm.glitch.me/tiket', {
+  console.log()
+  const { data } = await axios.post('http://localhost:3001/tiket', 
     array
-  }, {
+  , {
     headers: {
       'Content-Type': 'application/json'
     }

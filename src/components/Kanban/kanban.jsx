@@ -27,7 +27,6 @@ const RenderKanbanCard = (array) => {
 
 const Kanban = () => {
   const [tiket, setTiket] = useState([dataApiTiket]);
-  const [tiketAberto, setTiketAberto] = useState([]);
   const [tiketAtendendo, setTiketAtendendo] = useState([]);
   const [tiketAFazer, setTiketAFazer] = useState([]);
   const [tiketPausados, setTiketPausados] = useState([]);

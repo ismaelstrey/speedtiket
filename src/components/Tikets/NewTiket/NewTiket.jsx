@@ -23,7 +23,15 @@ const NewTiket = () => {
     reset,
   } = useForm();
   //declarar para qual função o método handleSubmit irá enviar as informações
-  const addTcket = async (data) => await postTiketApi(data)
+  const addTcket = async (data) => {
+    try {
+      const salva =await postTiketApi(data)
+      console.log({"salvo":{salva}})
+      return salva
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
 
     <form
